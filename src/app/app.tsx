@@ -6,6 +6,7 @@ import { ClientLayout } from "@/pages/layout/ClientLayout";
 import { Rooms } from "@/pages/rooms/Rooms";
 import { About } from "@/pages/about/About";
 import { Contact } from "@/pages/contact/Contact";
+import { SignInLayout } from "@/pages/layout/SignInLayout";
 
 const AppLayout = () => {
   return (
@@ -42,6 +43,10 @@ export const App = createBrowserRouter([
                 path: routerPath.contact,
               },
             ],
+          },
+          {
+            element: <SignInLayout />,
+            children: [],
           },
         ],
       },

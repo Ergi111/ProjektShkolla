@@ -58,7 +58,7 @@ export const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full py-24 flex justify-center items-center bg-gray-50">
+      <section className="w-full py-42 flex justify-center items-center bg-gray-50">
         <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 px-4">
           <div className="w-full md:w-1/2">
             <Form {...form}>
