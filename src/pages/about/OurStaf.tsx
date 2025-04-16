@@ -1,5 +1,5 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "lucide-react";
 
 const ourStaff = [
   {
