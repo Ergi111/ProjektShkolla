@@ -5,6 +5,7 @@ import { routerPath } from "@/constants/routerPath";
 import { ClientLayout } from "@/pages/layout/ClientLayout";
 import { Rooms } from "@/pages/rooms/Rooms";
 import { About } from "@/pages/about/About";
+import { Contact } from "@/pages/contact/Contact";
 
 const AppLayout = () => {
   return (
@@ -35,6 +36,10 @@ export const App = createBrowserRouter([
               {
                 element: <About />,
                 path: routerPath.about,
+              },
+              {
+                element: <Contact />,
+                path: routerPath.contact,
               },
             ],
           },
