@@ -1,6 +1,6 @@
 import { AboutUs } from "@/components/AboutUs";
 import { HotelsFeatures } from "@/components/HotelsFeatures";
-import React from "react";
+
 import { OurStaf } from "./OurStaf";
 
 export const About = () => {

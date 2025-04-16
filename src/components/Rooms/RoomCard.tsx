@@ -1,7 +1,7 @@
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { RoomsModal } from "./RoomsModal";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 const rooms = [
   {
@@ -56,9 +56,25 @@ const rooms = [
 
 export function RoomsCard() {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
-  const [selectedRoom, setSelectedRoom] = useState(null);
+  const [selectedRoom, setSelectedRoom] = useState<{
+    id: number;
+    name: string;
+    description: string;
+    price: number;
+    category: string;
+    image: string;
+  } | null>(null);
 
-  const handleOpenModal = (room) => {
+  const handleOpenModal = (
+    room: SetStateAction<{
+      id: number;
+      name: string;
+      description: string;
+      price: number;
+      category: string;
+      image: string;
+    } | null>
+  ) => {
     setSelectedRoom(room);
     setIsDetailsOpen(true);
   };
