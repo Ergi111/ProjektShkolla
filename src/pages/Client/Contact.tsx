@@ -18,7 +18,7 @@ const ContactSchema = z.object({
   phoneNumber: z.string(),
   message: z
     .string()
-    .min(30, { message: "Message must be at least 30 characters" }),
+    .min(30, { message: "Message must be at least 30 character" }),
 });
 
 export type ContactType = z.infer<typeof ContactSchema>;
