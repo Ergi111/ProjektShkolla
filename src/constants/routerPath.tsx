@@ -3,4 +3,5 @@ export const routerPath = {
   rooms: "/rooms",
   about: "/about",
   contact: "/contact",
+  signIn: "/sign-in",
 } as const;

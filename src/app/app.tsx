@@ -1,12 +1,13 @@
 import { createBrowserRouter, Outlet } from "react-router";
 import { PublicRoute } from "./PublicRoute";
-import { Home } from "@/pages/home/Home";
+import { Home } from "@/pages/Client/Home";
 import { routerPath } from "@/constants/routerPath";
-import { ClientLayout } from "@/pages/layout/ClientLayout";
-import { Rooms } from "@/pages/rooms/Rooms";
-import { About } from "@/pages/about/About";
-import { Contact } from "@/pages/contact/Contact";
-import { SignInLayout } from "@/pages/layout/SignInLayout";
+import { ClientLayout } from "@/pages/Layout/ClientLayout";
+import { Rooms } from "@/pages/Client/Rooms";
+import { About } from "@/pages/Client/About";
+import { Contact } from "@/pages/Client/Contact";
+import { SignInLayout } from "@/pages/Layout/SignInLayout";
+import { SignIn } from "@/pages/SignIn/Sign-In";
 
 const AppLayout = () => {
   return (
@@ -46,7 +47,12 @@ export const App = createBrowserRouter([
           },
           {
             element: <SignInLayout />,
-            children: [],
+            children: [
+              {
+                element: <SignIn />,
+                path: routerPath.signIn,
+              },
+            ],
           },
         ],
       },
