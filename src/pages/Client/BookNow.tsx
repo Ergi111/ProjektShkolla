@@ -67,9 +67,9 @@ export const BookNow = () => {
             name="fullName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Emri i plotë</FormLabel>
+                <FormLabel>Full Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="P.sh. Erisa Kola" {...field} />
+                  <Input placeholder="Full Name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -95,7 +95,7 @@ export const BookNow = () => {
             name="phoneNumber"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Numër telefoni</FormLabel>
+                <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input placeholder="+355 69 000 0000" {...field} />
                 </FormControl>
@@ -110,7 +110,7 @@ export const BookNow = () => {
               name="checkIn"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Data e mbërritjes</FormLabel>
+                  <FormLabel>Check In</FormLabel>
                   <FormControl>
                     <Input type="date" {...field} />
                   </FormControl>
@@ -123,7 +123,7 @@ export const BookNow = () => {
               name="checkOut"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Data e largimit</FormLabel>
+                  <FormLabel>Check Out</FormLabel>
                   <FormControl>
                     <Input type="date" {...field} />
                   </FormControl>
@@ -138,7 +138,7 @@ export const BookNow = () => {
             name="roomType"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Tipi i dhomës</FormLabel>
+                <FormLabel>Rooms type</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
@@ -164,7 +164,7 @@ export const BookNow = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Mesazh (opsional)</FormLabel>
+                <FormLabel>Messages</FormLabel>
                 <FormControl>
                   <Textarea
                     placeholder="Dëshira të veçanta..."
@@ -178,7 +178,7 @@ export const BookNow = () => {
           />
 
           <Button type="submit" className="w-full">
-            Dergo Rezervimin
+            Book Now
           </Button>
         </form>
       </Form>
