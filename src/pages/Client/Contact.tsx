@@ -11,6 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import axios from "axios";
 
 const ContactSchema = z.object({
   fullName: z.string().min(3, { message: "Name is required" }),
@@ -34,11 +35,18 @@ export const Contact = () => {
     },
   });
 
-  const onSubmit = (values: ContactType) => {
-    console.log("Form data:", values);
-    // mund të shtosh dërgimin e të dhënave me fetch/axios/emailjs etj.
+  const onSubmit = async (values: ContactType) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/contacts",
+        values
+      );
+      console.log("Dërguar me sukses:", response.data);
+      form.reset();
+    } catch (error) {
+      console.error("Gabim gjatë dërgimit:", error);
+    }
   };
-
   return (
     <main>
       <section>
