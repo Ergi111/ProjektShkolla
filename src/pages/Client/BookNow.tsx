@@ -52,10 +52,10 @@ export const BookNow = () => {
   const onSubmit = async (data: BookingType) => {
     try {
       await axios.post("http://localhost:3001/bookings", data);
-      console.log("Rezervimi u dërgua:", data);
+      console.log("Booking successfully submitted:", data);
       form.reset();
     } catch (error) {
-      console.error("Gabim gjatë dërgimit të rezervimit:", error);
+      console.error("Error submitting the booking:", error);
     }
   };
 
