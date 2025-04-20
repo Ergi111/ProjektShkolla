@@ -10,7 +10,7 @@ const rooms = [
     description: "A cozy room perfect for solo travelers.",
     price: 350,
     category: "Standard",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    image: "https://www.plazatirana.com/wp-content/uploads/sites/378/2021/11/presidential-suite-Maritim-Hotel-Plaza-Tirana.jpg",
   },
   {
     id: 2,
