@@ -18,7 +18,7 @@ const rooms = [
     description: "Ideal for couples, featuring a comfortable double bed.",
     price: 500,
     category: "Deluxe",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    image: "https://www.plazatirana.com/wp-content/uploads/sites/378/2021/11/Presidential-Suite-Maritim-Hotel-Plaza-Tirana-2.jpg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const rooms = [
     description: "Spacious suite designed for families with kids.",
     price: 800,
     category: "Suite",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    image: "https://www.plazatirana.com/wp-content/uploads/sites/378/2021/11/presidential-suite-Maritim-Hotel-Plaza-Tirana-4.jpg",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const rooms = [
     description: "Affordable option for budget-conscious travelers.",
     price: 250,
     category: "Budget",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    image: "https://www.plazatirana.com/wp-content/uploads/sites/378/2021/11/presidential-suite-Maritim-Hotel-Plaza-Tirana.jpg",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const rooms = [
     description: "Top-tier suite offering unmatched comfort and elegance.",
     price: 2000,
     category: "Premium",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    image: "https://www.plazatirana.com/wp-content/uploads/sites/378/2021/11/Presidential-Suite-Maritim-Hotel-Plaza-Tirana-2.jpg",
   },
 ];
 
