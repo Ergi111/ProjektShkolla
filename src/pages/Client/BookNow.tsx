@@ -61,7 +61,7 @@ export const BookNow = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-xl shadow-md mt-10">
-      <h1 className="text-3xl font-bold mb-6 text-center">Rezervo Dhomen</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Book Now</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
