@@ -8,7 +8,7 @@ import {
 import { AlignJustify } from "lucide-react";
 
 const navLinks = [
-  { name: "Messages", path: "/messages" },
+  { name: "Messages", path: "/message" },
   { name: "BOOKING", path: "/booking" },
 ];
 

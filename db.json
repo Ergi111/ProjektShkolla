@@ -7,5 +7,27 @@
       "phoneNumber": "+1 (245) 292-5026",
       "message": "Nihil vitae aute sed afkljdlkjalksjdflkajlsdjflasjflkaj;kldfal;dksj;fakl"
     }
+  ],
+  "bookings": [
+    {
+      "id": "56e7",
+      "fullName": "Otto Mitchell",
+      "email": "pyzewen@mailinator.com",
+      "phoneNumber": "+1 (355) 743-2558",
+      "checkIn": "2022-09-15",
+      "checkOut": "1975-03-07",
+      "roomType": "single",
+      "message": "Mollit dolor numquam"
+    },
+    {
+      "id": "85f8",
+      "fullName": "Shoshana Leon",
+      "email": "zipytedepe@mailinator.com",
+      "phoneNumber": "+1 (131) 971-2559",
+      "checkIn": "2000-07-02",
+      "checkOut": "2024-06-12",
+      "roomType": "single",
+      "message": "Libero dolorum elit"
+    }
   ]
 }

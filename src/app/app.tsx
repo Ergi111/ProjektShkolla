@@ -11,6 +11,7 @@ import { SignIn } from "@/pages/SignIn/Sign-In";
 import { WorkersLayout } from "@/pages/Layout/WorkersLayout";
 import { Messages } from "@/pages/Workers/Messages";
 import { Booking } from "@/pages/Workers/Booking";
+import { BookNow } from "@/pages/Client/BookNow";
 
 const AppLayout = () => {
   return (
@@ -45,6 +46,10 @@ export const App = createBrowserRouter([
               {
                 element: <Contact />,
                 path: routerPath.contact,
+              },
+              {
+                element: <BookNow />,
+                path: routerPath.bookNow,
               },
             ],
           },

@@ -6,4 +6,5 @@ export const routerPath = {
   signIn: "/sign-in",
   message: "/message",
   booking: "/booking",
+  bookNow: "/book-now",
 } as const;
