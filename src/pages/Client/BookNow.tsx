@@ -22,12 +22,14 @@ import {
 import axios from "axios";
 
 const BookingSchema = z.object({
-  fullName: z.string().min(3, { message: "Emri është i detyrueshëm" }),
-  email: z.string().email({ message: "Email i pavlefshëm" }),
-  phoneNumber: z.string().min(7, { message: "Numri është i detyrueshëm" }),
-  checkIn: z.string().min(1, { message: "Zgjidh datën e mbërritjes" }),
-  checkOut: z.string().min(1, { message: "Zgjidh datën e largimit" }),
-  roomType: z.string().min(1, { message: "Zgjidh tipin e dhomës" }),
+  fullName: z
+    .string()
+    .min(3, { message: "Full name must be at least 3 characters" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  phoneNumber: z.string().min(7, { message: "Phone number is required" }),
+  checkIn: z.string().min(1, { message: "Please select a check-in date" }),
+  checkOut: z.string().min(1, { message: "Please select a check-out date" }),
+  roomType: z.string().min(1, { message: "Please select a room type" }),
   message: z.string().optional(),
 });
 
